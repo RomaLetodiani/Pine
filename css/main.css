@@ -1,0 +1,282 @@
+@import "/css/fonts.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    min-height: 100vh;
+    min-width: 300px;
+    background-color: rgb(241,241,239);
+    padding: 60px 0;
+}
+
+.content {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 37px;
+    font-family: "Poppins-Bold";
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 4px;
+  }
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.socials {
+    display: flex;
+    gap: 30px;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 19px 32px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* main */
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 0;
+    gap: 75px;
+}
+
+.eggs, .eggs-div{
+    max-width: 870px;
+    max-height: 577px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.toast, .toast-div{
+    max-width: 723px;
+    max-height: 822px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 320px 20px 200px;
+    max-width: 877px;
+    align-self: center;
+    gap: 50px;
+}
+
+.upper>h1 {
+    font-size: 78px;
+    line-height: 1.4;
+    font-family: 'Poppins-Bold';
+}
+.upper>p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.upper>.btn {
+    padding: 3vh 9vw;
+}
+
+.main-banner {
+    background-image: url(/images/image-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 925px;
+}
+
+.menu {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.menu>span {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0 50px;
+    justify-content: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75%;
+    margin: auto;
+    row-gap: 35px;
+    column-gap: 50px;
+}
+
+.item {
+    max-width: 15vw;
+    gap: 20px;
+    display: flex;
+}
+
+.item div {
+    display: flex;
+    gap: 1vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-title {
+    font-family: 'Poppins-Bold';
+    font-size: 20px;
+}
+
+.bottom-banner-div {
+    padding: 200px 0;
+    position: relative;
+}
+
+.banner {
+    background-image: url(/images/image-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 735px;
+    max-width: 1270px;
+}
+
+.paragraph {
+    position: absolute;
+    right: 0;
+    top: 30vh;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 100px 0px 100px 50px;
+}
+
+.paragraph h3 {
+    font-size: 45px;
+    padding-bottom: 50px;
+}
+
+.paragraph a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.main-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.main-bottom div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-bottom h2 {
+    font-size: min(max(35px, 2vw), 50px);
+    font-family: "Poppins-Bold";
+}
+
+.main-bottom span {
+    font-size: 20px;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.footer>.btn {
+    padding: 3vh 9vw;
+}
+
+.footer-links a {
+    font-size: 20px;
+    font-family: "Poppins-Bold";
+    padding: 0 10px;
+}
+
+.footer>.footer-links>a,p>a {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: gray;
+}
+
+.footer>.socials {
+    gap: 20px;
+}
